@@ -10,6 +10,7 @@ composeBom = "2024.05.00"
 
 coilCompose = "2.6.0"
 lifecycleRuntimeKtx = "2.8.0"
+navigationCompose = "2.7.7"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,8 +31,8 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 # Coil library for Displaying Network images in Jetpack Compose
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
 
-# before jetpack navigation we need this library to declare viemodel in comples (later when we add nav it includes it)
-androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleRuntimeKtx" }
+# compose navigatioon librar
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
