@@ -2,6 +2,9 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
 
+    // add kotlin serialization
+    alias(libs.plugins.jetbrains.kotlin.serialization)
+
     // support for Parcelable
     id("kotlin-parcelize")
 }
@@ -63,8 +66,12 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 
+    // Coil library for loading online images to compose
     implementation(libs.coil.compose)
+
+    // Navigation
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.kotlinx.serialization.json)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

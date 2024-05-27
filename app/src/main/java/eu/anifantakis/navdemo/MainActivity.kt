@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import eu.anifantakis.navdemo.navigation.NavigationRootNew
 import eu.anifantakis.navdemo.navigation.NavigationRootOld
 import eu.anifantakis.navdemo.ui.theme.TypeSafeComposeNavigationTheme
 
@@ -21,7 +22,10 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Box(modifier = Modifier.padding(innerPadding)) {
                         // Old way to pass Parcelables in navigation using the SaveddStateHandle of BackstackEntry
-                        NavigationRootOld()
+                        // NavigationRootOld()
+
+                        // New way to pass Parcelables in navigation with NavType Safety
+                        NavigationRootNew()
                     }
                 }
             }

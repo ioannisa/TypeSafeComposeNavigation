@@ -7,10 +7,13 @@ junitVersion = "1.1.5"
 espressoCore = "3.5.1"
 activityCompose = "1.9.0"
 composeBom = "2024.05.00"
+lifecycleRuntimeKtx = "2.8.0"
 
 coilCompose = "2.6.0"
-lifecycleRuntimeKtx = "2.8.0"
-navigationCompose = "2.7.7"
+
+kotlinxSerialization = "1.9.0"
+kotlinxSerializationJson = "1.6.3"
+navigationCompose = "2.8.0-beta01"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -31,10 +34,13 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 # Coil library for Displaying Network images in Jetpack Compose
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
 
-# compose navigatioon librar
+# compose navigatioon library
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 
+jetbrains-kotlin-serialization = { id ="org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinxSerialization"}
