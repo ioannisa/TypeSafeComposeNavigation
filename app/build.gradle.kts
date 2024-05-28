@@ -72,6 +72,8 @@ dependencies {
     // Navigation
     implementation(libs.androidx.navigation.compose)
     implementation(libs.kotlinx.serialization.json)
+    // add my helper library to simplify passing parcelables with custom NavTypes
+    implementation(libs.navtype.parcelable.helper.library)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

@@ -11,6 +11,7 @@ import eu.anifantakis.navdemo.data.Person
 import eu.anifantakis.navdemo.presentation.screens.detail.DetailScreen
 import eu.anifantakis.navdemo.presentation.screens.main.MainScreen
 import eu.anifantakis.navdemo.presentation.screens.main.MainScreenViewModel
+import eu.anifantakis.navhelper.navtype.mapper
 import kotlin.reflect.typeOf
 
 @Composable
@@ -26,7 +27,7 @@ fun NavigationRootNew() {
         }
 
         composable<NavRoute.DetailScreen>(
-            typeMap = mapOf(typeOf<Person>() to NavType.fromCustom<Person>())
+            typeMap = mapOf(typeOf<Person>() to NavType.mapper<Person>())
         ) {
             val person = it.toRoute<NavRoute.DetailScreen>().person
             DetailScreen(person, onBackPress = {

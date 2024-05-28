@@ -9,6 +9,8 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        // add the following line to allow jitpack libraries into the project
+        maven(url = "https://jitpack.io")
     }
 }
 dependencyResolutionManagement {
@@ -16,6 +18,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // add the following line to allow jitpack libraries into the project
+        maven(url = "https://jitpack.io")
     }
 }
 
