@@ -11,3 +11,6 @@ This project demonstrates how to pass Parcelables using the Jetpack Compose Navi
 ## Related GISTS
 1. [Old hack using BackStack entry to pass Parcelables](https://gist.github.com/ioannisa/2f674098e20da5f0ef0747b529b129a6)
 2. [New type-safety approach using DataClasses to pass Parcelables](https://gist.github.com/ioannisa/924e256e10bbb40148f96cc5c8c03daf)
+
+## Custom Helper Library for the Type-Safety approach
+You can make use of a library to help you simplify the process of passing parcelables using DataClasses with the new Type-Safety approach [here](https://github.com/ioannisa/NavTypeParcelableHelperLibrary)
